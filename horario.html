@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Color and Name</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+        }
+        .button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .red {
+            background-color: red;
+        }
+        .yellow {
+            background-color: yellow;
+            color: black;
+        }
+        .blue {
+            background-color: blue;
+        }
+        .input {
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .saved {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Choose a Color and Enter Your Name</h1>
+    <div>
+        <input type="text" id="nameInput" class="input" placeholder="Enter your name">
+    </div>
+    <div>
+        <button class="button red" onclick="saveNameAndColor('red')">Red</button>
+        <button class="button yellow" onclick="saveNameAndColor('yellow')">Yellow</button>
+        <button class="button blue" onclick="saveNameAndColor('blue')">Blue</button>
+    </div>
+    <div class="saved" id="savedMessage"></div>
+
+    <script>
+        function saveNameAndColor(color) {
+            const name = document.getElementById('nameInput').value;
+            if (name.trim() === '') {
+                alert('Please enter your name before selecting a color.');
+                return;
+            }
+            document.body.style.backgroundColor = color;
+            const savedMessage = document.getElementById('savedMessage');
+            savedMessage.textContent = `Saved: ${name} chose ${color}`;
+            savedMessage.style.color = color === 'yellow' ? 'black' : 'white';
+        }
+    </script>
+</body>
+</html>
