@@ -10,8 +10,7 @@ li {
 } */
 
 body {
-    background: rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background: #7CB9E8;
 }
 
 
@@ -21,15 +20,15 @@ h1 {
 }
 
 table {
+    table-layout: fixed;
+    height: 500px;
     text-align: center;
     margin-top: 100px;
     margin-bottom: 50px;
     font-family: Arial, Helvetica, sans-serif;
     border: 1px solid black;
     border-collapse: collapse; /* Asegura que las celdas compartan los bordes */
-    background: rgb(70,136,255);
-    background: radial-gradient(circle, rgba(70,136,255,1) 0%, rgba(207,225,255,1) 0%);
-    border-radius: 15px;
+    background: #F0F8FF;
 
 }
 
