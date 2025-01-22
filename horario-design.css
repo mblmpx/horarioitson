@@ -1,23 +1,20 @@
+/* ul {
+    float: left;
+    list-style: none;
+    font-size: 70%;
+}
+
+li {
+    text-align: center;
+    margin-bottom: 50px;
+} */
 
 body {
-    background: rgb(164,131,45);
-background: linear-gradient(90deg, rgba(164,131,45,1) 0%, rgba(166,134,68,1) 19%, rgba(180,146,87,1) 27%, rgba(181,132,60,1) 44%, rgba(221,151,54,1) 50%, rgba(177,116,32,1) 60%, rgba(203,133,35,1) 73%, rgba(252,176,69,1) 100%);
+    background: #7CB9E8;
 }
-
-#fondo {
-    background-size: cover;
-    background-image: url(assets/fortnite.jpg);
-    background-repeat: repeat;
-    background-position: center;
-    padding-bottom: 10rem;
-    margin: 2rem;
-}
-
 
 
 h1 {
-    padding-top: 15px;
-    color: gold;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif
 }
@@ -26,12 +23,12 @@ table {
     table-layout: fixed;
     height: 500px;
     text-align: center;
-    margin-top: 70px;
+    margin-top: 100px;
     margin-bottom: 50px;
     font-family: Arial, Helvetica, sans-serif;
     border: 1px solid black;
     border-collapse: collapse; /* Asegura que las celdas compartan los bordes */
-    background-color: #F0F8FF;
+    background: #F0F8FF;
 
 }
 
@@ -42,4 +39,3 @@ td, th {
     padding-bottom: 25px;
     padding-top: 25px;
 }
-
