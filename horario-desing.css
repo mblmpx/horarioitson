@@ -1,0 +1,103 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Krub", sans-serif;
+    background-color: #7CB9E8;
+  
+    
+}
+
+.fondo_juan{
+    background-image: url('assets/fondo_horariojuan.jpg'); /* Ruta de la imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir toda el área */
+    background-repeat: repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen */
+    padding-bottom: 10rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: 2rem;
+    
+}
+.titulo_juan {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.tabla_juan {
+    align: center;
+    table-layout: fixed;
+    text-align: center;
+    border: 4px solid black;
+    border-collapse: collapse;
+    width: 70.66%;
+}
+
+.th_juan, .hora_juan{
+    border: 2px solid black;
+    text-align: center;
+    padding: 5px;
+    word-wrap: break-word;
+    width: 16.66%;
+}   
+
+.clase1_juan {
+    background-color: rgb(82, 137, 255);
+}
+
+.clase2_juan {
+    background-color: rgb(240, 170, 161);
+}
+
+.clase3_juan {
+    background-color: rgb(194, 255, 159);
+}
+
+.clase4_juan {
+    background-color: rgb(244, 255, 145);
+}
+
+.clase5_juan {
+    background-color: rgb(168, 82, 248);
+}
+
+.clase1_juan,
+.clase2_juan,
+.clase3_juan,
+.clase4_juan,
+.clase5_juan {
+    transition: transform 0.5s ease, background-color 0.3s ease;
+
+}
+
+.a_juan {
+    color: inherit;
+    /* Hace que el enlace herede el color del texto circundante */
+    text-decoration: none;
+    /* Quita el subrayado */
+}
+
+.a_juan:hover {
+    text-decoration: none;
+    
+    /* Opcional: subrayado al pasar el ratón */
+    color: #ff5733;
+    /* Cambia de color al pasar el ratón (opcional) */
+    transition: transform 0.5s ease, color 0.2s ease;
+}
+
+
+
+.fila1,
+.hora_juan, .dia_juan{
+    background-color: #f78c13;
+    font-weight: bold;
+    color: #121212;
+    
+}
+
+.tr_juan {
+    background-color: rgb(221, 221, 221);
+}
