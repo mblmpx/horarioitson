@@ -70,10 +70,20 @@ a:hover{
 
 .fondo{
 
-    background-image: url(images.jpg);
+    background-image: url(assets/images.jpg);
     background-repeat: repeat;
     background-position: center;
     padding-bottom: 10rem;
     margin: 2rem;
+
+}
+
+.fondoray{
+
+    background-image: url(assets/fortnite.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    padding-bottom: 10rem;
+    margin: 2rem; 
 
 }
