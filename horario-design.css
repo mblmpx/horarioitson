@@ -39,3 +39,41 @@ td, th {
     padding-bottom: 25px;
     padding-top: 25px;
 }
+
+#tablamartin td {
+    border: 3px solid red;
+    border-radius: 15px;
+    padding: 10px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+
+#top{
+    border: 3px solid blue;
+}
+
+#titulomartin{
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color:darkmagenta;
+}
+
+.fondo{
+
+    background-image: url(images.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    padding-bottom: 10rem;
+    margin: 2rem;
+
+}
