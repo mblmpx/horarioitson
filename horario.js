@@ -1,18 +1,19 @@
- // Selecciona todos los enlaces con la clase 'hover-link'
- const links = document.querySelectorAll('.hover-link');
- const hoverSound = document.getElementById('hoverSound');
 
- // Asigna el evento mouseover a cada enlace
- links.forEach(link => {
-     link.addEventListener('mouseover', () => {
-         hoverSound.currentTime = 0; // Reinicia el sonido
-         hoverSound.play(); // Reproduce el sonido
-     });
- });
+// Selecciona todos los elementos <a> con el id "linkito"
+const links = document.querySelectorAll('.linkito');
 
- var audio = document.getElementById("volumenFondo");
- 
- audio.addEventListener("canplay", function() {
-    audio.volume = 0.2;
- });
- 
+// Selecciona el audio con el id "hoverSound"
+const hoverSound = document.getElementById("hoverSound");
+
+// Recorre los enlaces y agrega un evento 'mouseover' para reproducir el audio
+links.forEach(link => {
+    link.addEventListener("mouseover", () => {
+        hoverSound.currentTime = 0; // Reinicia el audio para que se reproduzca desde el principio
+        hoverSound.play();
+    });
+});
+
+const fondo = document.getElementById("fondo");
+
+fondo.volume = 0.04;
+hoverSound.volume = 25;
